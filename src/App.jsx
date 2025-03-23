@@ -12,7 +12,7 @@ const APIkey = 'cca613aa879e2e36f93439d4a92724cf';
 
 function App() {
   const [data, setData] = useState(null);
-  const [location, setLocation] = useState('chennai');
+  const [location, setLocation] = useState('Madrid, Spain');
   const [inputValue, setInputValue] = useState('');
   const [animate, setAnimate] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -134,7 +134,7 @@ function App() {
 
   return (
     <div className=" w-full h-screen bg-gradient-to-r from-purple-700 to-blue-300 bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center px-4 lg:px-0">
-      {errorMsg && <div className="w-full max-w-[90vw] lg:max-w-[450px] bg-[#ff208c] text-white absolute top-1  capitalize rounded-md">{errorMsg.response.data.message}</div>}
+      {errorMsg && <div className="w-full max-w-[90vw] lg:max-w-[450px] bg-[#f10000] text-white absolute top-1  capitalize rounded-md">{errorMsg.response.data.message}</div>}
       { /*from */}
 
       <form className={`${animate ? 'animate-shake' : 'animate-none'}h-14 bg-black/30 w-full max-w-[450px]  rounded-full backdrop-blur-[32px] mb-6`}>
